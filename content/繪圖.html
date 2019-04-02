@@ -61,5 +61,30 @@ $(function(){
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>pelican 網誌 << <a href='pelican 網誌.html'>Previous</a> <a href='Week1.html'>Next</a> >> Week1<br /><h1>組員操作影片</h1>
-<p>每週各分組組員必須將參與分組協同過程之電腦操作流程錄成影片後, 上傳至各自的 Youtube 帳號區, 並嵌入各分組網站頁面中.</p><br />pelican 網誌 << <a href='pelican 網誌.html'>Previous</a> <a href='Week1.html'>Next</a> >> Week1</section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='網際內容管理.html'>網際內容管理</a><ul><li><a href='Week7.html'>Week7</a><ul><li><a href='game1.html'>game1</a><li><a href='繪圖.html'>繪圖</a></li></li></ul></ul><li><a href='Python 手冊.html'>Python 手冊</a><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a></li></ul></nav><section>game1 << <a href='game1.html'>Previous</a> <a href='Python 手冊.html'>Next</a> >> Python 手冊<br /><h1>繪圖</h1>
+<p>
+<script>// <![CDATA[
+canvas = document.getElementById("canvas");
+ctx = canvas.getContext('2d');
+
+function draw(){
+ ctx.beginPath();
+ ctx.strokeStyle = "rgb(200,0,0)";
+ ctx.arc(200, 200,50,0,2*Math.PI, false);
+ ctx.stroke();
+}
+
+function clear_canvas(){
+// Store the current transformation matrix
+ctx.save();
+
+// Use the identity matrix while clearing the canvas
+ctx.setTransform(1, 0, 0, 1, 0, 0);
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// Restore the transform
+ctx.restore();
+}
+// ]]></script>
+</p>
+<p><button onclick="draw()">繪圖</button> <button onclick="clear_canvas()">清除</button></p>
+<p></p><br />game1 << <a href='game1.html'>Previous</a> <a href='Python 手冊.html'>Next</a> >> Python 手冊</section></div></body></html>
