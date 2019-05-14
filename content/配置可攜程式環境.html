@@ -61,53 +61,5 @@ $(function(){
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='網際內容管理.html'>網際內容管理</a><ul><li><a href='Week13.html'>Week13</a><ul><li><a href='網路設定.html'>網路設定</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a><li><a href='倉儲改版.html'>倉儲改版</a></li></ul><li><a href='Week7.html'>Week7</a><ul><li><a href='程式導入與畫布執行.html'>程式導入與畫布執行</a><li><a href='繪圖.html'>繪圖</a></li></li></ul></ul><li><a href='期中報告.html'>期中報告</a></li></ul></nav><section>程式導入與畫布執行 << <a href='程式導入與畫布執行.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告<br /><h1>繪圖</h1>
-<p><!-- 導入 Brython 標準程式庫 -->
-<script src="/get_page/static/brython.js"></script>
-<script src="/get_page/static/brython_stdlib.js"></script>
-</p>
-<p></p>
-<p><!-- 啟動 Brython -->
-<script>
-window.onload=function(){
-// 設定 data/py 為共用程式路徑
-brython({debug:1, pythonpath:['./../data/py']});
-}
-</script>
-</p>
-<p><canvas height="400" id="plotarea" width="600"></canvas></p>
-<p>
-<script type="text/python">
-# 導入 doc
-from browser import document as doc
-import math
-<p>
-<script>// <![CDATA[
-canvas = document.getElementById("canvas");
-ctx = canvas.getContext('2d');
-# 準備繪圖畫布
-canvas = doc["plotarea"]
-ctx = canvas.getContext("2d")
-
-function draw(){
- ctx.beginPath();
- ctx.strokeStyle = "rgb(200,0,0)";
- ctx.arc(200, 200,50,0,2*Math.PI, false);
- ctx.stroke();
-}
-
-function clear_canvas(){
-// Store the current transformation matrix
-ctx.save();
-
-// Use the identity matrix while clearing the canvas
-ctx.setTransform(1, 0, 0, 1, 0, 0);
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-// Restore the transform
-ctx.restore();
-}
-// ]]></script>
-</p>
-<p><button onclick="draw()">繪圖</button> <button onclick="clear_canvas()">清除</button></p>
-<p></p>
-<br />程式導入與畫布執行 << <a href='程式導入與畫布執行.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告</section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='網際內容管理.html'>網際內容管理</a><ul><li><a href='Week13.html'>Week13</a><ul><li><a href='網路設定.html'>網路設定</a><li><a href='配置可攜程式環境.html'>配置可攜程式環境</a><li><a href='倉儲改版.html'>倉儲改版</a></li></ul><li><a href='Week7.html'>Week7</a><ul><li><a href='程式導入與畫布執行.html'>程式導入與畫布執行</a><li><a href='繪圖.html'>繪圖</a></li></li></ul></ul><li><a href='期中報告.html'>期中報告</a></li></ul></nav><section>網路設定 << <a href='網路設定.html'>Previous</a> <a href='倉儲改版.html'>Next</a> >> 倉儲改版<br /><h1>配置可攜程式環境</h1>
+<br />網路設定 << <a href='網路設定.html'>Previous</a> <a href='倉儲改版.html'>Next</a> >> 倉儲改版</section></div></body></html>
