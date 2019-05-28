@@ -50,9 +50,9 @@
 <p><span data-blogger-escaped-style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 14.85px;" style="color: #333333; font-family: 'arial' , 'tahoma' , 'helvetica' , 'freesans' , sans-serif;">git push 加上代號, 就可以將此次的提交內容,&nbsp;</span></p>
 <p><span data-blogger-escaped-style="background-color: white; color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 14.85px;" style="color: #333333; font-family: 'arial' , 'tahoma' , 'helvetica' , 'freesans' , sans-serif;">推送到指定的 URL 所在遠端倉儲.</span></p>
 <h2>靜態CMSimfly</h2>
-<p></p>
-<h1>Week7</h1>
-<p>測試 GMAE1&nbsp; &nbsp; 測試倉儲</p><h2>程式導入與畫布執行</h2>
+<h2>新增虛擬主機</h2><p>在新版的VirtualBox-6.0.8中</p><p>建立新的虛擬主機</p><p><img src="/images/UB.png" alt="" width="479" height="398"></p><p>操作影片:<iframe width="560" height="314" src="//www.youtube.com/embed/zj7mhzcimZQ" allowfullscreen="allowfullscreen"></iframe></p><h1>Week7</h1>
+<p>測試 GMAE1&nbsp; &nbsp; 測試倉儲</p>
+<h2>程式導入與畫布執行</h2>
 <h4>game1</h4>
 <h4>The game of craps has the following rules:</h4>
 <p>課本章節:&nbsp;<a href="https://link.springer.com/chapter/10.1007/978-1-4842-4155-4_2">https://link.springer.com/chapter/10.1007/978-1-4842-4155-4_2</a>&nbsp;</p>
@@ -60,11 +60,11 @@
 <p><button onclick="myFunction()">Try it</button></p>
 <p id="demo"></p>
 <p>
-<script>// <![CDATA[
+<script>
 function myFunction() {
   document.getElementById("demo").innerHTML = Math.floor(Math.random()*10);
 }
-// ]]></script>
+</script>
 </p>
 <p>上述程式原始碼:</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;p&gt;&lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;&lt;/p&gt;
@@ -75,7 +75,7 @@ function myFunction() {
 }
 // ]]&gt;&lt;/script&gt;</pre>
 <p>
-<script type="text/javascript">// <![CDATA[
+<script type="text/javascript">
 var cwidth = 400;
 	var cheight = 300;
 	var dicex = 50;
@@ -225,7 +225,7 @@ function draw2mid() {
 	ctx.closePath();
 	ctx.fill();
 }
-// ]]></script>
+</script>
 </p>
 <p><canvas height="300" id="canvas" width="400"> Your browser doesn't support the HTML5 element canvas. </canvas> <br><button onclick="throwdice();">Throw dice </button></p>
 <form id="f" name="f">Stage: <input name="stage" type="text" value="First Throw"> Point: <input name="pv" type="text" value="   "> Outcome: <input name="outcome" type="text" value="     "></form>
@@ -384,7 +384,78 @@ function draw2mid() {
 &lt;p&gt;&lt;canvas height="300" id="canvas" width="400"&gt; Your browser doesn't support the HTML5 element canvas. &lt;/canvas&gt; &lt;br&gt; &lt;button onclick="throwdice();"&gt;Throw dice &lt;/button&gt;&lt;/p&gt;
 &lt;form id="f" name="f"&gt;Stage: &lt;input name="stage" type="text" value="First Throw"&gt; Point: &lt;input name="pv" type="text" value="   "&gt; Outcome: &lt;input name="outcome" type="text" value="     "&gt;&lt;/form&gt;</pre>
 <p></p>
-<h2>繪圖</h2><p><!-- 導入 Brython 標準程式庫 --><script src="/get_page/static/brython.js"></script><script src="/get_page/static/brython_stdlib.js"></script></p><p></p><p><!-- 啟動 Brython --><script>window.onload=function(){// 設定 data/py 為共用程式路徑brython({debug:1, pythonpath:['./../data/py']});}</script></p><p><canvas height="400" id="plotarea" width="600"></canvas></p><p><script type="text/python"># 導入 docfrom browser import document as docimport math# 準備繪圖畫布canvas = doc["plotarea"]ctx = canvas.getContext("2d")# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)# 以下採用 canvas 原始座標繪圖flag_w = canvas.widthflag_h = canvas.heightcircle_x = flag_w/4circle_y = flag_h/4# 先畫滿地紅ctx.fillStyle='rgb(255, 0, 0)'ctx.fillRect(0,0,flag_w,flag_h)# 再畫青天ctx.fillStyle='rgb(0, 0, 150)'ctx.fillRect(0,0,flag_w/2,flag_h/2)# 畫十二道光芒白日ctx.beginPath()star_radius = flag_w/8angle = 0for i in range(24):    angle += 5*math.pi*2/12    toX = circle_x + math.cos(angle)*star_radius    toY = circle_y + math.sin(angle)*star_radius    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo    if (i):        ctx.lineTo(toX, toY)    else:        ctx.moveTo(toX, toY)ctx.closePath()# 將填色設為白色ctx.fillStyle = '#fff'ctx.fill()# 白日:藍圈ctx.beginPath()ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)ctx.closePath()# 填色設為藍色ctx.fillStyle = 'rgb(0, 0, 149)'ctx.fill()# 白日:白心ctx.beginPath()ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)ctx.closePath()# 填色設為白色ctx.fillStyle = '#fff'ctx.fill()</script></p><h1>期中報告</h1>
+<h2>繪圖</h2>
+<p><!-- 導入 Brython 標準程式庫 -->
+<script src="/get_page/static/brython.js"></script>
+<script src="/get_page/static/brython_stdlib.js"></script>
+</p>
 <p></p>
+<p><!-- 啟動 Brython -->
+<script>
+window.onload=function(){
+// 設定 data/py 為共用程式路徑
+brython({debug:1, pythonpath:['./../data/py']});
+}
+</script>
+</p>
+<p><canvas height="400" id="plotarea" width="600"></canvas></p>
+<p>
+<script type="text/python">
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/4
+circle_y = flag_h/4
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫青天
+ctx.fillStyle='rgb(0, 0, 150)'
+ctx.fillRect(0,0,flag_w/2,flag_h/2)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為藍色
+ctx.fillStyle = 'rgb(0, 0, 149)'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+</script>
+</p>
+<h1>期中報告</h1>
+<p>40723147期中報告</p>
+<p><iframe width="560" height="314" src="//www.youtube.com/embed/QJ7NeZLST-E" allowfullscreen="allowfullscreen"></iframe></p>
 <p></p>
 </div>
