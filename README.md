@@ -1,3 +1,3 @@
-# s40723147.github.io
+# s40723147 在網際內容管理 的倉儲
 
-s40723147.github.io
+github pages: https://s40723147.github.io/content/index.html
