@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
-<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
-	<global_window_position top="50" left="50" height="500" width="700"/>
-	<global_log_window_position top="0" left="0" height="0" width="0"/>
-</globals>
+<leo_header file_format="2"/>
+<globals/>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -13,28 +10,49 @@
 <v t="leo.20180827201556.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="leo.20180827201556.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="leo.20180827201621.1" a="E"><vh>編輯 reveal</vh>
-<v t="leo.20180827201621.2" a="E"><vh>@path ./../reveal</vh>
-<v t="leo.20180827201621.3" a="E"><vh>@clean index.html</vh>
-<v t="leo.20180827201621.4" a="E"><vh>html</vh>
+<v t="leo.20180827201621.1"><vh>編輯 reveal</vh>
+<v t="leo.20180827201621.2"><vh>@path ./../reveal</vh>
+<v t="leo.20180827201621.3"><vh>@clean index.html</vh>
+<v t="leo.20180827201621.4"><vh>html</vh>
 <v t="leo.20180827201621.5"><vh>head</vh></v>
-<v t="leo.20180827201621.6" a="E"><vh>body</vh>
-<v t="leo.20180827201621.7" a="E"><vh>reveal div</vh>
-<v t="leo.20180827201621.8" a="E"><vh>slides div</vh>
-<v t="leo.20180827201621.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180827201621.6"><vh>body</vh>
+<v t="leo.20180827201621.7"><vh>reveal div</vh>
+<v t="leo.20180827201621.8"><vh>slides div</vh>
+<v t="leo.20180827201621.9"><vh>封面投影片</vh>
 <v t="leo.20180827201621.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180827201621.11" a="E"><vh>快捷鍵</vh>
-<v t="leo.20180827201621.12"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20180827201621.11"><vh>第一頁</vh>
+<v t="leo.20180827201621.12"><vh>Proxy</vh></v>
+</v>
+<v t="leo.20190610003042.1"><vh>第二頁</vh>
+<v t="leo.20190610003042.2"><vh>可攜</vh></v>
+</v>
+<v t="leo.20190610003316.1"><vh>第三頁</vh>
+<v t="leo.20190610003316.2"><vh>查詢電腦網路連線設定</vh></v>
+</v>
+<v t="leo.20190610003454.1"><vh>第四頁</vh>
+<v t="leo.20190610003454.2"><vh>倉儲改版</vh></v>
+</v>
+<v t="leo.20190610003757.1"><vh>第五頁</vh>
+<v t="leo.20190610003757.2"><vh>靜態CMSimfly</vh></v>
+</v>
+<v t="leo.20190610004045.1"><vh>第六頁</vh>
+<v t="leo.20190610004045.2"><vh>新增ssh key</vh></v>
+</v>
+<v t="leo.20190610004550.1"><vh>第七頁</vh>
+<v t="leo.20190610004550.2"><vh>Pull Requests</vh></v>
+</v>
+<v t="leo.20190610004955.1"><vh>第八頁</vh>
+<v t="leo.20190610004955.2"><vh>新增虛擬主機</vh></v>
 </v>
 <v t="leo.20180827201621.13"><vh>各式內容引用範例</vh>
-<v t="leo.20180827201621.14" a="E"><vh>導入數學符號與方程式</vh>
+<v t="leo.20180827201621.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180827201621.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20180827201621.16" a="E"><vh>導入縮排程式碼</vh>
+<v t="leo.20180827201621.16"><vh>導入縮排程式碼</vh>
 <v t="leo.20180827201621.17"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20180827201621.18" a="E"><vh>導入影片</vh>
+<v t="leo.20180827201621.18"><vh>導入影片</vh>
 <v t="leo.20180827201621.19"><vh>iframe 導入影片</vh></v>
 </v>
 </v>
@@ -124,36 +142,29 @@ QLineEdit#editorLabel {
 <t tx="leo.20180827201556.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
 <t tx="leo.20180827201621.1"></t>
-<t tx="leo.20180827201621.10">## 2018Fall 分組網際簡報
+<t tx="leo.20180827201621.10">## 2019 wcm 網際內容管理
 
 ### 虎科大機械設計工程系
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [40723147](https://github.com/s40723147/)
 &lt;/small&gt;
 
-[2018 Fall 分組網誌](./../blog/index.html)
-
+[2019wcm](https://2019wcm.blogspot.com/)
 
 </t>
 <t tx="leo.20180827201621.11">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
 </t>
-<t tx="leo.20180827201621.12"># 投影片快捷鍵
+<t tx="leo.20180827201621.12">## Proxy設置
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* IPv4 網路與 IPv6 網路設定.
 
+* 當我們上網時，電腦跟電腦間是透過IP跟網址互相連結的，
+* 每一台電腦對外都會有一個相對應的IP位址。
+
+[對應操作步驟連結](https://s40723147.github.io/content/%E7%B6%B2%E8%B7%AF%E8%A8%AD%E5%AE%9A.html)
 </t>
 <t tx="leo.20180827201621.13">&lt;section&gt;
 @others
@@ -325,6 +336,99 @@ make.start()
 
 
 						
+</t>
+<t tx="leo.20190610003042.1">@others
+</t>
+<t tx="leo.20190610003042.2">## 配置可攜程式環境
+
+* 在個人隨身碟中加入 2019_cad_w5.7z
+
+* 下載完後進行運用以利編輯個人期末報告以了解其意義
+
+ [對應操作步驟連結](https://s40723147.github.io/content/%E9%85%8D%E7%BD%AE%E5%8F%AF%E6%94%9C%E7%A8%8B%E5%BC%8F%E7%92%B0%E5%A2%83.html)
+</t>
+<t tx="leo.20190610003316.1">@others
+</t>
+<t tx="leo.20190610003316.2">## 查詢電腦網路連線設定
+
+* 使用 ipconfig /all  指令
+
+* 找尋相關網路連線位置
+
+[操作影片](https://youtu.be/_TPHyEZuu7U)
+</t>
+<t tx="leo.20190610003454.1">@others
+</t>
+<t tx="leo.20190610003454.2">## 倉儲改版
+
+* 這個步驟用來管理Github倉儲進行版本變更或更新‧
+
+* 需熟練運用git指令 完成倉儲改版
+
+* 更新倉儲內部資料後便可以用git指令將其推送上去
+
+[操作影片連結](https://youtu.be/-dJOSN2SnVE)
+</t>
+<t tx="leo.20190610003757.1">@others
+</t>
+<t tx="leo.20190610003757.2">## 靜態CMSimfly
+
+* 在此進行編輯作業
+
+* 完成文字撰寫
+
+* 也可貼入圖
+
+* 完成內容編輯後儲存
+
+[操作影片連結](https://youtu.be/bNlcW5Yw_s4)
+
+</t>
+<t tx="leo.20190610004045.1">@others
+</t>
+<t tx="leo.20190610004045.2">## 新增ssh key
+
+* 在倉儲中新建一把key以利我們在做協同管理時免於多人的眼光(輸入帳號密碼)
+
+* 輕鬆無壓力的完成協同管理
+
+[操作影片連結](https://youtu.be/QH7uioB_Dds)
+
+[操作步驟連結](https://s40723147.github.io/content/%E6%96%B0%E5%A2%9Essh%20key.html)
+
+</t>
+<t tx="leo.20190610004550.1">@others
+</t>
+<t tx="leo.20190610004550.2">## Pull Requests
+
+* 在我們對於一個作者的github倉儲專案有興趣時
+
+* 我們便可以Fork對應的倉儲並且進行創作
+
+* 在完成創作後發送pull  requests 給原著作
+
+* 在原著作同意使用你的版本後
+
+* 便可以將你的創作版本合併到原著的倉儲
+
+[操作步驟連結](https://s40723147.github.io/content/Pull%20Requests.html)
+</t>
+<t tx="leo.20190610004955.1">@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190610004955.2">## 新增虛擬主機
+
+* 在新版的VirtualBox-6.0.8中
+
+* 建立新的虛擬主機
+
+* 完成基本設定
+
+[操作影片連結](https://youtu.be/zj7mhzcimZQ)
 </t>
 </tnodes>
 </leo_file>
