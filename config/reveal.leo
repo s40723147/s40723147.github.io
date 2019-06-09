@@ -156,6 +156,11 @@ Created by [40723147](https://github.com/s40723147/)
 <t tx="leo.20180827201621.11">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20180827201621.12">## Proxy設置
 
@@ -337,7 +342,14 @@ make.start()
 
 						
 </t>
-<t tx="leo.20190610003042.1">@others
+<t tx="leo.20190610003042.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20190610003042.2">## 配置可攜程式環境
 
@@ -347,7 +359,14 @@ make.start()
 
  [對應操作步驟連結](https://s40723147.github.io/content/%E9%85%8D%E7%BD%AE%E5%8F%AF%E6%94%9C%E7%A8%8B%E5%BC%8F%E7%92%B0%E5%A2%83.html)
 </t>
-<t tx="leo.20190610003316.1">@others
+<t tx="leo.20190610003316.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20190610003316.2">## 查詢電腦網路連線設定
 
@@ -357,7 +376,14 @@ make.start()
 
 [操作影片](https://youtu.be/_TPHyEZuu7U)
 </t>
-<t tx="leo.20190610003454.1">@others
+<t tx="leo.20190610003454.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20190610003454.2">## 倉儲改版
 
@@ -369,7 +395,14 @@ make.start()
 
 [操作影片連結](https://youtu.be/-dJOSN2SnVE)
 </t>
-<t tx="leo.20190610003757.1">@others
+<t tx="leo.20190610003757.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20190610003757.2">## 靜態CMSimfly
 
@@ -384,7 +417,14 @@ make.start()
 [操作影片連結](https://youtu.be/bNlcW5Yw_s4)
 
 </t>
-<t tx="leo.20190610004045.1">@others
+<t tx="leo.20190610004045.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20190610004045.2">## 新增ssh key
 
@@ -397,7 +437,14 @@ make.start()
 [操作步驟連結](https://s40723147.github.io/content/%E6%96%B0%E5%A2%9Essh%20key.html)
 
 </t>
-<t tx="leo.20190610004550.1">@others
+<t tx="leo.20190610004550.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
 </t>
 <t tx="leo.20190610004550.2">## Pull Requests
 
@@ -413,7 +460,9 @@ make.start()
 
 [操作步驟連結](https://s40723147.github.io/content/Pull%20Requests.html)
 </t>
-<t tx="leo.20190610004955.1">@others
+<t tx="leo.20190610004955.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
     &lt;/script&gt;
 &lt;/section&gt;
 
